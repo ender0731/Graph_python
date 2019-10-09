@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 ###python program to save graphs
-def graph_y(data,columns,directory):
+def graph_y(data,columns):
     cat_columns=[]
     num_columns=[]
     if columns==0:
