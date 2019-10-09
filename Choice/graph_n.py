@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 ###python program to display graphs
-def graph_n(data,columns,directory):
+def graph_n(data,columns):
     cat_columns=[]
     num_columns=[]
     if columns==0:
