@@ -3,8 +3,8 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-from Choice import graph_y
-from Choice import graph_n
+from Choice import graph_y as gy
+from Choice import graph_n as gn
 ####################################################
 print('Welcome to the graphing package.\nShut the current figure to display the next one.\nThe prompt will show a dialogue to press any key to close the window once all the graphs have been displayed.\n')
 data=input('Please enter your file name.\n')
@@ -32,13 +32,16 @@ while True:
 while True:
 	save_or_no=input('Do you want to save the figures? Enter [y/n].\n')
 	if save_or_no=='y':
-		graph_y(data,columns)
+		gy.graph_y(data,columns)
 		break
 	elif save_or_no=='n':
-		graph_n(data,columns)
+		gn.graph_n(data,columns)
 		break
 	else:
 		print('Invalid input.\n')
+
+		
+
 
 		
 
